@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaled's Engineering Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #2563eb, #1f2937);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #93c5fd;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #111827;
+      border-bottom: 3px solid #2563eb;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .projects, .experience {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      flex: 1 1 45%;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+    }
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #1d4ed8;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    iframe, video {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Khaled's Engineering Portfolio</h1>
+    <p>Master's Student in Electrical Engineering | Automation | Industrial Communication | Robotics Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Khaled, a passionate Electrical Engineering Master's student focusing on Automation, Industrial Communication, and Robotics. I love creating real-world industrial solutions using tools like CODESYS, Python, MATLAB, Simulink, and modern communication protocols.
+    </p>
+  </div>
+
+  <div class="container" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="images/bin_pick_project.jpg" alt="Bin Pick Project">
+        <h3>Bin Pick Lab Project</h3>
+        <p>Developed skill-based robot control integrating MATLAB, Simulink, Arduino, and Semscape simulation. Deployed on a real industrial robotic arm.</p>
+        <ul>
+          <li><strong>Skills:</strong> Robotic Motion Planning, MATLAB, Simulink, Image Detection and Vision</li>
+          <li><strong>Key Responsibilities:</strong> Designed motion algorithms, Modeled robot in Simulink, Integrated hardware communication</li>
+          <li><strong>Achievements:</strong> Improved object picking precision with control parameter optimization</li>
+        </ul>
+        <a href="https://gitlab.rhrk.uni-kl.de/zyj49qax/cas-project-lab/-/blob/main/src/The_1_day_lab/RobotMotion.m?ref_type=heads" class="button">MATLAB Code</a>
+        <a href="https://gitlab.rhrk.uni-kl.de/zyj49qax/cas-project-lab/-/blob/main/src/The_1_day_lab/main_model.slx?ref_type=heads" class="button" style="margin-left: 0.5rem;">Simulink Model</a>
+      </div>
+
+      <div class="card">
+        <img src="images/FYP_HW.jpg" alt="Energy Optimization Project">
+        <h3>Bachelor Project: Energy Optimization</h3>
+        <p>Created a real-time energy monitoring and optimization system using CODESYS and Automation Server. Real-time visualization integrated with Modbus TCP communication. I applied the Idea on two System : a water Distribution and a Smart Grid Systems</p>
+        <ul>
+          <li><strong>Skills:</strong> CODESYS,HMI and Visualization, Automation Server, Modbus TCP, Real-Time Data Acquisition</li>
+          <li><strong>Key Responsibilities:</strong> Programmed PLCs for energy monitoring & Water Distribution, Created live dashboards for Fault Monitering, Integrated sensors via Modbus</li>
+          <li><strong>Achievements:</strong> Achieved energy savings and optimal water usage on a prototype model environment </li>
+        </ul>
+        <a href="https://github.com/Khaledada/Realtime-Control-and-Monitoring-of-Smart-Grid-System/blob/main/FYPMobusFinal/FYPMobusFinal.ino" class="button">Arduino Code</a>
+        <a href="https://github.com/Khaledada/Realtime-Control-and-Monitoring-of-Smart-Grid-System/tree/main" class="button">Codesys Programs Implementations</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <img src="images/smartfactory_project.webp" alt="SmartFactory Kaiserslautern">
+        <h3>SmartFactory Kaiserslautern</h3>
+        <p>Worked on modular automation setups for Industry 4.0 demonstrators, focusing on OPC UA communication and digital twin architectures.</p>
+          <h4 style="margin-top: 1rem;">Skills Used:</h4>
+        <ul>
+          <li>OPC UA protocol integration</li>
+          <li>PLC Programming (Structured Text)</li>
+          <li>Worked with B&R Safety PLCs through Safe Designer </li>
+          <li>Industrial Networking (Ethernet/IP, Profinet)</li>
+         </ul>
+          <h4 style="margin-top: 1rem;">Key Responsibilities:</h4>
+        <ul>
+          <li>Developed and tested OPC UA nodes for machine communication.</li>
+          <li>Designed simulation models for virtual commissioning or maintaince.</li>
+          <li>Supported Skillsets commanding based on our own Nodesets.</li>
+          <li>Supported fault diagnosis and troubleshooting of industrial demonstrators during live exhibitions.</li>
+        </ul>
+        <a href="https://www.smartfactory.de/twin4trucks" class="button">Project web page</a>
+        </div>
+
+      <div class="card">
+        <img src="images/mechatronics_lab.jpg.jpg" alt="Mechatronics Lab Assistant">
+        <h3>Mechatronics Systems Lab Supervisor</h3>
+        <p>Guided postgraduate students in lab work involving PLC programming, Control theory understanding, real-time control systems, sensor integration, and troubleshooting.</p>
+        <ul>
+        <li><strong>Skills:</strong> PLC Programming in ST (B&R), Applying PID Controllers in Model and Reality</li>
+        <li><strong>Key Responsibilities:</strong> Guided students in PLC programming and troubleshooting in both English and German, PID Tuning, Errors Diagnosis and Maintainance in both HW & SW</li>
+        <li><strong>Achievements:</strong> Developed lab sheets and troubleshooting guides, improved student performance and understanding</li>
+      </ul>
+      <!-- Optional: Add Video -->
+        <video controls width="100%" style="border-radius: 5px; margin-top: 1rem;">
+          <source src="images/mechatronics_lab_demo.mp4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, C: MATLAB & Arduino, Structured Text (ST), HTML</li>
+      <li>Industrial Software: CODESYS, Simulinik, Simscape, Automation Server</li>
+      <li>Protocols: OPC UA, Modbus TCP/IP</li>
+      <li>Tools: Git, Visual Studio Code, Notebooks, LaTeX</li>
+    </ul>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:kh-khalil@hotmail.com" style="color: #2563eb;">kh-khalil@hotmail.com</a></p>
+    <p>  <a href="https://github.com/khaledada" target="_blank" class="button">GitHub</a>
+         <a href="https://gitlab.rhrk.uni-kl.de/users/zyj49qax/projects" target="_blank" class="button">GitLab(University)</a>
+        <a href="https://www.linkedin.com/in/khaled-khalil-128041189/" target="_blank" class="button" style="margin-left: 0.5rem;">LinkedIn</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Khaled. All rights reserved. | Built with ❤️ and Engineering Spirit</p>
+  </footer>
+</body>
+</html>
